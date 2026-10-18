@@ -1,0 +1,1433 @@
+{
+  "version": 1,
+  "name": "原始演示数据",
+  "defaultDuration": 5000,
+  "fields": {
+    "name": {
+      "label": "姓名",
+      "kind": "text"
+    },
+    "teamname": {
+      "label": "队伍信息",
+      "kind": "text"
+    },
+    "title": {
+      "label": "竖排标题",
+      "kind": "text"
+    },
+    "points": {
+      "label": "雷达分数",
+      "kind": "numbers"
+    },
+    "rank": {
+      "label": "阶段排名",
+      "kind": "numbers"
+    },
+    "photo": {
+      "label": "选手照片",
+      "kind": "image"
+    },
+    "logo": {
+      "label": "队伍标志",
+      "kind": "image"
+    },
+    "rankImages": {
+      "label": "阶段图片",
+      "kind": "images"
+    }
+  },
+  "dimensions": [
+    {
+      "label": "通算总分",
+      "min": -947.74,
+      "max": 429.46,
+      "average": 0,
+      "format": "number",
+      "decimals": 1
+    },
+    {
+      "label": "一位率",
+      "min": 0.023210643,
+      "max": 0.346551367,
+      "average": 0.237196827,
+      "format": "percent",
+      "decimals": 0
+    },
+    {
+      "label": "连对率",
+      "min": 0.237673953,
+      "max": 0.599304186,
+      "average": 0.486872884,
+      "format": "percent",
+      "decimals": 0
+    },
+    {
+      "label": "避四率",
+      "min": 0.55,
+      "max": 0.8,
+      "average": 0.739460484,
+      "format": "percent",
+      "decimals": 0
+    },
+    {
+      "label": "单场最高分",
+      "min": 30060,
+      "max": 92260,
+      "average": 66562.5,
+      "format": "number",
+      "decimals": 0
+    },
+    {
+      "label": "半庄数",
+      "min": 14.6,
+      "max": 41.6,
+      "average": 34.6,
+      "format": "number",
+      "decimals": 0
+    },
+    {
+      "label": "打点效率",
+      "min": 735.3,
+      "max": 1455.5,
+      "average": 1311.522083,
+      "format": "number",
+      "decimals": 1
+    },
+    {
+      "label": "铳点损失",
+      "min": -990.1,
+      "max": -463.7,
+      "average": -605.9695815,
+      "format": "number",
+      "decimals": 1
+    }
+  ],
+  "rankStages": [
+    {
+      "label": "常规赛",
+      "total": 40
+    },
+    {
+      "label": "半决赛",
+      "total": 24
+    },
+    {
+      "label": "决赛",
+      "total": 16
+    },
+    {
+      "label": "通算",
+      "total": 40
+    }
+  ],
+  "records": [
+    {
+      "name": "选手姓名",
+      "teamname": "队伍排名",
+      "points": [
+        -672.3,
+        0.087878788,
+        0.31,
+        0.6,
+        42500,
+        20,
+        879.3324,
+        -884.8
+      ],
+      "duration": 3500,
+      "playEntranceAnimation": true,
+      "hideAvg": true,
+      "title": "最小刻度",
+      "rank": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "player-1",
+      "photo": "images/player-1.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "选手姓名",
+      "teamname": "队伍排名",
+      "points": [
+        429.46,
+        0.346551367,
+        0.599304186,
+        0.8,
+        92260,
+        41.6,
+        1455.5,
+        -463.7
+      ],
+      "duration": 3500,
+      "hideAvg": true,
+      "title": "最大刻度",
+      "noAnimation": true,
+      "rank": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "player-2",
+      "photo": "images/player-2.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "选手姓名",
+      "teamname": "队伍排名",
+      "points": [
+        0,
+        0.237196827,
+        0.486872884,
+        0.739460484,
+        66562.5,
+        34.6,
+        1311.522083,
+        -605.9695815
+      ],
+      "duration": 3500,
+      "title": "选手均值",
+      "noAnimation": true,
+      "rank": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "player-3",
+      "photo": "images/player-3.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "石井 一馬",
+      "teamname": "常规赛淘汰",
+      "points": [
+        160.7,
+        0.33,
+        0.51,
+        0.76,
+        55300,
+        39,
+        1221.9375,
+        -456.804
+      ],
+      "playEntranceAnimation": true,
+      "duration": 5000,
+      "rank": [
+        11,
+        0,
+        0,
+        10
+      ],
+      "id": "player-4",
+      "photo": "images/player-4.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "逢川 恵夢",
+      "teamname": "常规赛淘汰",
+      "points": [
+        -114.3,
+        0.11,
+        0.53,
+        0.8,
+        60000,
+        26,
+        1311.014,
+        -869.7864
+      ],
+      "duration": 5000,
+      "rank": [
+        27,
+        0,
+        0,
+        27
+      ],
+      "id": "player-5",
+      "photo": "images/player-5.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "三浦 智博",
+      "teamname": "常规赛淘汰",
+      "points": [
+        -381.9,
+        0.11,
+        0.44,
+        0.62,
+        70900,
+        27,
+        1169.9383,
+        -770
+      ],
+      "duration": 5000,
+      "rank": [
+        36,
+        0,
+        0,
+        36
+      ],
+      "id": "player-6",
+      "photo": "images/player-6.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "HIRO 柴田",
+      "teamname": "常规赛淘汰",
+      "points": [
+        -405,
+        0.1,
+        0.39,
+        0.64,
+        80200,
+        28,
+        1107.0585,
+        -621.2088
+      ],
+      "duration": 5000,
+      "rank": [
+        38,
+        0,
+        0,
+        37
+      ],
+      "id": "player-7",
+      "photo": "images/player-7.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "渋川 難波",
+      "teamname": "常规赛淘汰",
+      "points": [
+        176.7,
+        0.25,
+        0.54,
+        0.8,
+        77800,
+        35,
+        1308.2212,
+        -358.3629
+      ],
+      "playEntranceAnimation": true,
+      "duration": 5000,
+      "rank": [
+        10,
+        0,
+        0,
+        9
+      ],
+      "id": "player-8",
+      "photo": "images/player-8.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "岡田 紗佳",
+      "teamname": "常规赛淘汰",
+      "points": [
+        -160.8,
+        0.14,
+        0.44,
+        0.7,
+        97300,
+        27,
+        1404.284,
+        -692.4876
+      ],
+      "duration": 5000,
+      "rank": [
+        30,
+        0,
+        0,
+        30
+      ],
+      "id": "player-9",
+      "photo": "images/player-9.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "阿久津 翔太",
+      "teamname": "常规赛淘汰",
+      "points": [
+        -200,
+        0.19,
+        0.42,
+        0.69,
+        57100,
+        26,
+        1388.8688,
+        -884.8
+      ],
+      "duration": 5000,
+      "rank": [
+        32,
+        0,
+        0,
+        32
+      ],
+      "id": "player-10",
+      "photo": "images/player-10.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "堀 慎吾",
+      "teamname": "常规赛淘汰",
+      "points": [
+        -442.6,
+        0.15,
+        0.31,
+        0.65,
+        65500,
+        32,
+        1176.1296,
+        -763.2
+      ],
+      "duration": 5000,
+      "rank": [
+        39,
+        0,
+        0,
+        38
+      ],
+      "id": "player-11",
+      "photo": "images/player-11.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "鈴木 優",
+      "teamname": "常规赛淘汰",
+      "points": [
+        114.8,
+        0.29,
+        0.47,
+        0.67,
+        91500,
+        34,
+        1512.71,
+        -706.4902
+      ],
+      "playEntranceAnimation": true,
+      "duration": 5000,
+      "rank": [
+        14,
+        0,
+        0,
+        14
+      ],
+      "id": "player-12",
+      "photo": "images/player-12.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "瑞原 明奈",
+      "teamname": "常规赛淘汰",
+      "points": [
+        -72.3,
+        0.31,
+        0.37,
+        0.65,
+        69300,
+        29,
+        1483.2615,
+        -740.7996
+      ],
+      "duration": 5000,
+      "rank": [
+        22,
+        0,
+        0,
+        24
+      ],
+      "id": "player-13",
+      "photo": "images/player-13.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "仲林 圭",
+      "teamname": "常规赛淘汰",
+      "points": [
+        -219.9,
+        0.12,
+        0.56,
+        0.71,
+        79100,
+        32,
+        1135.0848,
+        -647.094
+      ],
+      "duration": 5000,
+      "rank": [
+        33,
+        0,
+        0,
+        33
+      ],
+      "id": "player-14",
+      "photo": "images/player-14.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "小林 剛",
+      "teamname": "常规赛淘汰",
+      "points": [
+        -445,
+        0.12,
+        0.36,
+        0.6,
+        42500,
+        25,
+        879.3324,
+        -602.8416
+      ],
+      "duration": 5000,
+      "rank": [
+        40,
+        0,
+        0,
+        39
+      ],
+      "id": "player-15",
+      "photo": "images/player-15.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "多井 隆晴",
+      "teamname": "常规赛淘汰",
+      "points": [
+        123.4,
+        0.28,
+        0.51,
+        0.84,
+        58400,
+        39,
+        1240,
+        -388.8885
+      ],
+      "playEntranceAnimation": true,
+      "duration": 5000,
+      "rank": [
+        13,
+        0,
+        0,
+        13
+      ],
+      "id": "player-16",
+      "photo": "images/player-16.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "日向 藍子",
+      "teamname": "常规赛淘汰",
+      "points": [
+        -185.8,
+        0.15,
+        0.45,
+        0.7,
+        69600,
+        20,
+        1307.8973,
+        -701.0663
+      ],
+      "duration": 5000,
+      "rank": [
+        31,
+        0,
+        0,
+        31
+      ],
+      "id": "player-17",
+      "photo": "images/player-17.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "松本 吉弘",
+      "teamname": "常规赛淘汰",
+      "points": [
+        -293.7,
+        0.19,
+        0.42,
+        0.61,
+        49600,
+        26,
+        1066.264,
+        -596.47
+      ],
+      "duration": 5000,
+      "rank": [
+        34,
+        0,
+        0,
+        34
+      ],
+      "id": "player-18",
+      "photo": "images/player-18.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "白鳥 翔",
+      "teamname": "常规赛淘汰",
+      "points": [
+        110.2,
+        0.2,
+        0.62,
+        0.85,
+        45400,
+        35,
+        1333.5,
+        -550.9278
+      ],
+      "duration": 5000,
+      "rank": [
+        16,
+        0,
+        0,
+        15
+      ],
+      "id": "player-19",
+      "photo": "images/player-19.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "浅見 真紀",
+      "teamname": "半决赛淘汰",
+      "points": [
+        -137.3,
+        0.1584,
+        0.396804,
+        0.792804,
+        60400,
+        25,
+        1414.949128,
+        -665.76864
+      ],
+      "duration": 5000,
+      "playEntranceAnimation": true,
+      "rank": [
+        26,
+        15,
+        0,
+        29
+      ],
+      "id": "player-20",
+      "photo": "images/player-20.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "園田 賢",
+      "teamname": "半决赛淘汰",
+      "points": [
+        103.9,
+        0.301395349,
+        0.550704651,
+        0.809295349,
+        57000,
+        43,
+        1599.51413,
+        -692.7574884
+      ],
+      "duration": 5000,
+      "rank": [
+        3,
+        23,
+        0,
+        16
+      ],
+      "id": "player-21",
+      "photo": "images/player-21.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "鈴木 たろう",
+      "teamname": "半决赛淘汰",
+      "points": [
+        -672.3,
+        0.087878788,
+        0.325151515,
+        0.689393939,
+        50100,
+        33,
+        1119.755721,
+        -791.6226606
+      ],
+      "duration": 5000,
+      "rank": [
+        35,
+        24,
+        0,
+        40
+      ],
+      "id": "player-22",
+      "photo": "images/player-22.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "渡辺 太",
+      "teamname": "半决赛淘汰",
+      "points": [
+        466.1,
+        0.305123077,
+        0.584615385,
+        0.839230769,
+        70300,
+        39,
+        1539.109231,
+        -514.3828462
+      ],
+      "duration": 5000,
+      "rank": [
+        6,
+        3,
+        0,
+        5
+      ],
+      "id": "player-23",
+      "photo": "images/player-23.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "竹内 元太",
+      "teamname": "半决赛淘汰",
+      "points": [
+        103.2,
+        0.279738462,
+        0.559230769,
+        0.762307692,
+        58200,
+        39,
+        1209.284831,
+        -487.1530615
+      ],
+      "duration": 5000,
+      "playEntranceAnimation": true,
+      "rank": [
+        12,
+        16,
+        0,
+        17
+      ],
+      "id": "player-24",
+      "photo": "images/player-24.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "醍醐 大",
+      "teamname": "半决赛淘汰",
+      "points": [
+        -10.8,
+        0.279285714,
+        0.540952381,
+        0.732142857,
+        60500,
+        42,
+        1230.292805,
+        -470.57755
+      ],
+      "duration": 5000,
+      "rank": [
+        15,
+        20,
+        0,
+        19
+      ],
+      "id": "player-25",
+      "photo": "images/player-25.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "浅井 堂岐",
+      "teamname": "半决赛淘汰",
+      "points": [
+        -40.7,
+        0.24137931,
+        0.448275862,
+        0.689655172,
+        72800,
+        29,
+        1304.065655,
+        -360.4165517
+      ],
+      "duration": 5000,
+      "rank": [
+        23,
+        12,
+        0,
+        22
+      ],
+      "id": "player-26",
+      "photo": "images/player-26.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "茅森 早香",
+      "teamname": "半决赛淘汰",
+      "points": [
+        -9.1,
+        0.233333333,
+        0.4,
+        0.766666667,
+        79600,
+        30,
+        1395.7155,
+        -584.939
+      ],
+      "duration": 5000,
+      "rank": [
+        21,
+        11,
+        0,
+        18
+      ],
+      "id": "player-27",
+      "photo": "images/player-27.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "中田 花奈",
+      "teamname": "殿军",
+      "points": [
+        540.2,
+        0.358611111,
+        0.551388889,
+        0.774166667,
+        65100,
+        36,
+        1532.360117,
+        -676.8597083
+      ],
+      "duration": 5000,
+      "rank": [
+        8,
+        13,
+        3,
+        2
+      ],
+      "playEntranceAnimation": true,
+      "id": "player-28",
+      "photo": "images/player-28.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "東城 りお",
+      "teamname": "殿军",
+      "points": [
+        -85.8,
+        0.238918919,
+        0.425945946,
+        0.752432432,
+        83600,
+        37,
+        1299.56943,
+        -624.5646649
+      ],
+      "duration": 5000,
+      "rank": [
+        20,
+        22,
+        5,
+        26
+      ],
+      "id": "player-29",
+      "photo": "images/player-29.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "下石 戟",
+      "teamname": "殿军",
+      "points": [
+        -44.8,
+        0.333617021,
+        0.63787234,
+        0.785531915,
+        58000,
+        47,
+        1572.81783,
+        -581.2982
+      ],
+      "duration": 5000,
+      "rank": [
+        1,
+        17,
+        16,
+        23
+      ],
+      "id": "player-30",
+      "photo": "images/player-30.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "鈴木 大介",
+      "teamname": "殿军",
+      "points": [
+        -39.1,
+        0.246111111,
+        0.498888889,
+        0.689444444,
+        58600,
+        36,
+        1183.684428,
+        -543.9449722
+      ],
+      "duration": 5000,
+      "rank": [
+        29,
+        1,
+        12,
+        21
+      ],
+      "id": "player-31",
+      "photo": "images/player-31.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "黒沢 咲",
+      "teamname": "季军",
+      "points": [
+        704.9,
+        0.366857143,
+        0.542857143,
+        0.799428571,
+        66200,
+        35,
+        1509.2516,
+        -651.57576
+      ],
+      "duration": 5000,
+      "playEntranceAnimation": true,
+      "rank": [
+        17,
+        2,
+        2,
+        1
+      ],
+      "id": "player-32",
+      "photo": "images/player-32.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "本田 朋広",
+      "teamname": "季军",
+      "points": [
+        180.2,
+        0.222217778,
+        0.461115556,
+        0.822217778,
+        58400,
+        45,
+        1256.143733,
+        -653.3592044
+      ],
+      "duration": 5000,
+      "rank": [
+        25,
+        6,
+        6,
+        8
+      ],
+      "id": "player-33",
+      "photo": "images/player-33.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "瀬戸熊 直樹",
+      "teamname": "季军",
+      "points": [
+        -26.4,
+        0.235789474,
+        0.524210526,
+        0.703157895,
+        57400,
+        38,
+        1338.201026,
+        -619.0208053
+      ],
+      "duration": 5000,
+      "rank": [
+        24,
+        8,
+        10,
+        20
+      ],
+      "id": "player-34",
+      "photo": "images/player-34.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "萩原 聖人",
+      "teamname": "季军",
+      "points": [
+        -370.4,
+        0.263157895,
+        0.389473684,
+        0.734210526,
+        54100,
+        38,
+        1130.426568,
+        -532.8071684
+      ],
+      "duration": 5000,
+      "rank": [
+        28,
+        7,
+        13,
+        35
+      ],
+      "id": "player-35",
+      "photo": "images/player-35.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "滝沢 和典",
+      "teamname": "亚军",
+      "points": [
+        519.2,
+        0.411219512,
+        0.483658537,
+        0.701463415,
+        67900,
+        41,
+        1513.9808,
+        -574.8264024
+      ],
+      "duration": 5000,
+      "playEntranceAnimation": true,
+      "rank": [
+        4,
+        19,
+        4,
+        3
+      ],
+      "id": "player-36",
+      "photo": "images/player-36.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "高宮 まり",
+      "teamname": "亚军",
+      "points": [
+        -136.1,
+        0.254571429,
+        0.479142857,
+        0.822571429,
+        53800,
+        35,
+        1165.3044,
+        -406.8182857
+      ],
+      "duration": 5000,
+      "rank": [
+        9,
+        14,
+        14,
+        28
+      ],
+      "id": "player-37",
+      "photo": "images/player-37.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "伊達 朱里紗",
+      "teamname": "亚军",
+      "points": [
+        -75,
+        0.264594595,
+        0.511081081,
+        0.673243243,
+        60900,
+        37,
+        1337.391422,
+        -511.5570649
+      ],
+      "duration": 5000,
+      "rank": [
+        18,
+        21,
+        7,
+        25
+      ],
+      "id": "player-38",
+      "photo": "images/player-38.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "佐々木 寿人",
+      "teamname": "亚军",
+      "points": [
+        190.5,
+        0.186044186,
+        0.671630233,
+        0.764644186,
+        74400,
+        43,
+        1442.535028,
+        -685.4274884
+      ],
+      "duration": 5000,
+      "rank": [
+        19,
+        5,
+        8,
+        7
+      ],
+      "id": "player-39",
+      "photo": "images/player-39.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "勝又 健志",
+      "teamname": "冠军",
+      "points": [
+        485.8,
+        0.170285714,
+        0.481142857,
+        0.771434286,
+        88700,
+        35,
+        1314.21936,
+        -715.1346457
+      ],
+      "duration": 5000,
+      "playEntranceAnimation": true,
+      "rank": [
+        37,
+        4,
+        1,
+        4
+      ],
+      "id": "player-40",
+      "photo": "images/player-40.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "永井 孝典",
+      "teamname": "冠军",
+      "points": [
+        129,
+        0.388780488,
+        0.554634146,
+        0.802439024,
+        67100,
+        41,
+        1389.164868,
+        -534.2149244
+      ],
+      "duration": 5000,
+      "rank": [
+        2,
+        10,
+        15,
+        12
+      ],
+      "id": "player-41",
+      "photo": "images/player-41.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "内川 幸太郎",
+      "teamname": "冠军",
+      "points": [
+        134.8,
+        0.30173913,
+        0.562608696,
+        0.823478261,
+        104700,
+        46,
+        1353.926517,
+        -595.6736413
+      ],
+      "duration": 5000,
+      "rank": [
+        5,
+        18,
+        11,
+        11
+      ],
+      "id": "player-42",
+      "photo": "images/player-42.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    },
+    {
+      "name": "二階堂 亜樹",
+      "teamname": "冠军",
+      "points": [
+        325.5,
+        0.318823529,
+        0.553529412,
+        0.787058824,
+        65200,
+        34,
+        1263.717306,
+        -412.8548235
+      ],
+      "duration": 5000,
+      "rank": [
+        7,
+        9,
+        9,
+        6
+      ],
+      "id": "player-43",
+      "photo": "images/player-43.svg",
+      "logo": "images/logo.svg",
+      "rankImages": [
+        "images/stage-1.svg",
+        "images/stage-2.svg",
+        "images/stage-3.svg",
+        "images/stage-4.svg"
+      ]
+    }
+  ]
+}
