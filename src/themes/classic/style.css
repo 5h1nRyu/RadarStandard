@@ -1,0 +1,100 @@
+[data-theme='classic'] {
+  --theme-font: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --panel-fill: rgba(25, 25, 35, 0.85);
+  --panel-border: rgba(180, 200, 255, 0.18);
+  --text: #f1f4ff;
+  --muted: #d4d8ff;
+  --track: rgba(90, 110, 170, 0.2);
+  --progress: rgba(235, 242, 255, 0.82);
+  font-family: var(--theme-font);
+  color: var(--text);
+}
+[data-theme='classic'] .component-face {
+  border-radius: calc(10px * var(--s));
+  border: max(1px, calc(1px * var(--s))) solid var(--panel-border);
+  background: var(--panel-fill);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  padding: calc(14px * var(--s));
+  overflow: hidden;
+}
+[data-theme='classic'] [data-type='radar'] .component-face {
+  background: transparent;
+  padding: 0;
+  border-radius: calc(12px * var(--s));
+  border-color: rgba(170, 190, 255, 0.25);
+}
+[data-theme='classic'] [data-type='image'] .component-face {
+  background: transparent;
+}
+[data-theme='classic'] [data-type='icon'] .component-face {
+  padding: calc(4px * var(--s));
+  background: rgba(20, 24, 36, 0.35);
+}
+[data-theme='classic'] [data-type='text'] .component-face,
+[data-theme='classic'] [data-type='verticalText'] .component-face {
+  background: rgba(20, 20, 30, 0.9);
+}
+[data-theme='classic'] .component-text {
+  font-size: calc(60px * var(--s));
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: pre;
+  text-align: center;
+}
+[data-theme='classic'] .component-title {
+  font-size: calc(28px * var(--s));
+  font-weight: 700;
+  margin-bottom: calc(12px * var(--s));
+}
+[data-theme='classic'] .stats-grid {
+  gap: calc(8px * var(--s));
+}
+[data-theme='classic'] .stat-cell {
+  background: rgba(45, 58, 88, 0.38);
+  border: 1px solid var(--panel-border);
+  border-radius: calc(5px * var(--s));
+  padding: calc(6px * var(--s));
+}
+[data-theme='classic'] .stat-label {
+  font-size: calc(16px * var(--s));
+  color: var(--muted);
+}
+[data-theme='classic'] .stat-value {
+  font-size: calc(22px * var(--s));
+  font-weight: 700;
+}
+[data-theme='classic'] .rank-value {
+  font-size: calc(46px * var(--s));
+  font-weight: 800;
+  line-height: 1.1;
+}
+[data-theme='classic'] .rank-total {
+  font-size: calc(18px * var(--s));
+  color: #dce4ffd1;
+}
+[data-theme='classic'] .rank-gold {
+  color: gold;
+  text-shadow: 0 0 10px #f5ae1f;
+}
+[data-theme='classic'] .rank-silver {
+  color: silver;
+  text-shadow: 0 0 10px #8f8f8f;
+}
+[data-theme='classic'] .rank-bronze {
+  color: #dd944a;
+  text-shadow: 0 0 10px #cd7f32;
+}
+[data-theme='classic'] [data-type='progress'] .component-face,
+[data-theme='classic'] [data-type='verticalProgress'] .component-face {
+  padding: calc(10px * var(--s));
+}
+[data-theme='classic'] .progress-track {
+  border-radius: 999px;
+  background: var(--track);
+  overflow: hidden;
+}
+[data-theme='classic'] .progress-fill {
+  background: var(--progress);
+  border-radius: inherit;
+}

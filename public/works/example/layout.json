@@ -1,0 +1,152 @@
+{
+  "version": 1,
+  "canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "components": [
+    {
+      "id": "radar",
+      "type": "radar",
+      "binding": {
+        "source": "field",
+        "field": "points"
+      },
+      "x": 1000,
+      "y": 100,
+      "width": 760,
+      "height": 760,
+      "z": 5
+    },
+    {
+      "id": "photo",
+      "type": "image",
+      "binding": {
+        "source": "field",
+        "field": "photo"
+      },
+      "x": 80,
+      "y": 150,
+      "width": 400,
+      "height": 450,
+      "z": 6
+    },
+    {
+      "id": "name",
+      "type": "text",
+      "binding": {
+        "source": "field",
+        "field": "name"
+      },
+      "x": 500,
+      "y": 150,
+      "width": 460,
+      "height": 110,
+      "z": 7
+    },
+    {
+      "id": "team",
+      "type": "text",
+      "binding": {
+        "source": "field",
+        "field": "teamname"
+      },
+      "x": 500,
+      "y": 280,
+      "width": 460,
+      "height": 110,
+      "z": 8
+    },
+    {
+      "id": "logo",
+      "type": "icon",
+      "binding": {
+        "source": "field",
+        "field": "logo"
+      },
+      "x": 780,
+      "y": 440,
+      "width": 160,
+      "height": 160,
+      "z": 9
+    },
+    {
+      "id": "title",
+      "type": "verticalText",
+      "binding": {
+        "source": "field",
+        "field": "title"
+      },
+      "x": 1780,
+      "y": 160,
+      "width": 100,
+      "height": 500,
+      "z": 10
+    },
+    {
+      "id": "info",
+      "type": "info",
+      "binding": {
+        "source": "field",
+        "field": "points"
+      },
+      "x": 80,
+      "y": 650,
+      "width": 860,
+      "height": 240,
+      "z": 11
+    },
+    {
+      "id": "rank",
+      "type": "ranks",
+      "binding": {
+        "source": "field",
+        "field": "rank"
+      },
+      "x": 1000,
+      "y": 870,
+      "width": 620,
+      "height": 150,
+      "z": 12
+    },
+    {
+      "id": "stages",
+      "type": "rankImages",
+      "binding": {
+        "source": "field",
+        "field": "rankImages"
+      },
+      "x": 500,
+      "y": 440,
+      "width": 260,
+      "height": 150,
+      "z": 13
+    },
+    {
+      "id": "item",
+      "type": "progress",
+      "binding": {
+        "source": "timeline",
+        "scope": "item"
+      },
+      "x": 80,
+      "y": 960,
+      "width": 860,
+      "height": 36,
+      "z": 14
+    },
+    {
+      "id": "global",
+      "type": "progress",
+      "binding": {
+        "source": "timeline",
+        "scope": "global"
+      },
+      "x": 80,
+      "y": 1010,
+      "width": 1680,
+      "height": 36,
+      "z": 15
+    }
+  ]
+}
