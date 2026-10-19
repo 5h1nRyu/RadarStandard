@@ -1,0 +1,160 @@
+[data-theme='nasa-punk'] {
+  --theme-font: 'Helvetica Neue', 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --nasa-mono: 'SFMono-Regular', 'Consolas', 'Liberation Mono', monospace;
+  --nasa-ink: #252824;
+  --nasa-muted: #545b5a;
+  --nasa-line: #95998f;
+  --nasa-paper: #f5f2e9;
+  --nasa-red: #d63a2c;
+  font-family: var(--theme-font);
+  color: var(--nasa-ink);
+  background: #ece5d6;
+}
+[data-theme='nasa-punk'] .component-face {
+  padding: calc(34px * var(--s)) calc(20px * var(--s)) calc(18px * var(--s));
+  border: max(1px, calc(1px * var(--s))) solid var(--nasa-line);
+  border-radius: calc(3px * var(--s));
+  background: var(--nasa-paper) url('./textures/scuffs.svg') center / 512px 512px;
+  box-shadow: 0 calc(3px * var(--s)) 0 #25282418;
+  overflow: hidden;
+  isolation: isolate;
+}
+/* Four slotted, flush fasteners; kept clear of data and pointer interactions. */
+[data-theme='nasa-punk'] .component-face::before {
+  content: '';
+  position: absolute;
+  inset: calc(6px * var(--s));
+  background-image:
+    url('./textures/fastener.svg'), url('./textures/fastener.svg'), url('./textures/fastener.svg'),
+    url('./textures/fastener.svg');
+  background-position:
+    top left,
+    top right,
+    bottom left,
+    bottom right;
+  background-size: calc(9px * var(--s)) calc(9px * var(--s));
+  background-repeat: no-repeat;
+  pointer-events: none;
+  z-index: 2;
+}
+[data-theme='nasa-punk'] .component-face::after {
+  content: 'DATA MODULE / 84S';
+  position: absolute;
+  top: calc(11px * var(--s));
+  left: calc(24px * var(--s));
+  right: calc(24px * var(--s));
+  overflow: hidden;
+  white-space: nowrap;
+  color: var(--nasa-muted);
+  font: 500 calc(10px * var(--s)) / 1 var(--nasa-mono);
+  letter-spacing: calc(1.5px * var(--s));
+  pointer-events: none;
+}
+[data-theme='nasa-punk'] [data-type='radar'] .component-face {
+  padding: calc(32px * var(--s)) calc(12px * var(--s)) calc(24px * var(--s));
+  background-color: #f8f6ef;
+}
+[data-theme='nasa-punk'] [data-type='radar'] .component-face::after {
+  content: '01 / RADAR TELEMETRY · THIS SIDE UP ↑';
+}
+[data-theme='nasa-punk'] [data-type='info'] .component-face::after {
+  content: '02 / CREW PERFORMANCE';
+}
+[data-theme='nasa-punk'] [data-type='ranks'] .component-face::after {
+  content: '03 / MISSION STANDINGS';
+}
+[data-theme='nasa-punk'] [data-type='rankImages'] .component-face::after {
+  content: '04 / STAGE INDEX';
+}
+[data-theme='nasa-punk'] [data-type='image'] .component-face::after {
+  content: '05 / CREW IDENTIFICATION';
+}
+[data-theme='nasa-punk'] [data-type='text'] .component-face::after {
+  content: '06 / PERSONNEL RECORD';
+}
+[data-theme='nasa-punk'] [data-type='verticalText'] .component-face::after {
+  content: '↑ UP / 07';
+  letter-spacing: calc(1px * var(--s));
+  left: calc(18px * var(--s));
+  right: calc(18px * var(--s));
+}
+[data-theme='nasa-punk'] .component-text {
+  font-size: calc(52px * var(--s));
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: calc(1px * var(--s));
+  white-space: pre;
+  text-align: center;
+}
+[data-theme='nasa-punk'] .component-title {
+  font-size: calc(27px * var(--s));
+  font-weight: 700;
+  line-height: 1.2;
+  border-bottom: max(1px, calc(1px * var(--s))) solid var(--nasa-line);
+  padding-bottom: calc(8px * var(--s));
+  margin-bottom: calc(8px * var(--s));
+}
+[data-theme='nasa-punk'] .stats-grid {
+  gap: calc(5px * var(--s));
+}
+[data-theme='nasa-punk'] .stat-cell {
+  padding: calc(5px * var(--s));
+  border: max(1px, calc(1px * var(--s))) solid #95998f80;
+  background: #ece5d640;
+}
+[data-theme='nasa-punk'] .stat-label {
+  color: var(--nasa-muted);
+  font-size: calc(14px * var(--s));
+  line-height: 1.4;
+  font-weight: 500;
+}
+[data-theme='nasa-punk'] .stat-value {
+  font: 700 calc(22px * var(--s)) / 1.3 var(--nasa-mono);
+  font-variant-numeric: tabular-nums;
+}
+[data-theme='nasa-punk'] .rank-value {
+  font: 700 calc(38px * var(--s)) / 1.1 var(--nasa-mono);
+}
+[data-theme='nasa-punk'] .rank-total {
+  color: var(--nasa-muted);
+  font: 400 calc(15px * var(--s)) / 1.3 var(--nasa-mono);
+}
+[data-theme='nasa-punk'] .rank-gold {
+  color: var(--nasa-red);
+}
+[data-theme='nasa-punk'] [data-type='rankImages'] .component-face {
+  padding: calc(28px * var(--s)) calc(16px * var(--s)) calc(16px * var(--s));
+}
+[data-theme='nasa-punk'] [data-type='icon'] .component-face {
+  padding: calc(20px * var(--s));
+  border-radius: 50%;
+  border: max(1px, calc(2px * var(--s))) solid #4c5a68;
+  outline: max(1px, calc(1px * var(--s))) solid #4c5a68;
+  outline-offset: calc(-9px * var(--s));
+  background-color: #ece5d6;
+}
+[data-theme='nasa-punk'] [data-type='icon'] .component-face::before,
+[data-theme='nasa-punk'] [data-type='icon'] .component-face::after {
+  display: none;
+}
+/* Compact instruments use their entire saved rectangle, with no header text. */
+[data-theme='nasa-punk'] [data-type='progress'] .component-face,
+[data-theme='nasa-punk'] [data-type='verticalProgress'] .component-face {
+  padding: calc(8px * var(--s));
+}
+[data-theme='nasa-punk'] [data-type='progress'] .component-face::before,
+[data-theme='nasa-punk'] [data-type='progress'] .component-face::after,
+[data-theme='nasa-punk'] [data-type='verticalProgress'] .component-face::before,
+[data-theme='nasa-punk'] [data-type='verticalProgress'] .component-face::after {
+  display: none;
+}
+[data-theme='nasa-punk'] .progress-track {
+  border: max(1px, calc(1px * var(--s))) solid #95998f;
+  background: repeating-linear-gradient(90deg, #4c5a6826 0 1px, transparent 1px 10px);
+}
+[data-theme='nasa-punk'] [data-type='verticalProgress'] .progress-track {
+  background: repeating-linear-gradient(0deg, #4c5a6826 0 1px, transparent 1px 10px);
+}
+[data-theme='nasa-punk'] .progress-fill {
+  background: #4c5a68;
+}

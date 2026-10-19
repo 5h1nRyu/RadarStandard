@@ -138,6 +138,52 @@ try {
     await waitCount(page, 20);
   });
   await checkpoint(
+    'NASA theme switches all instruments without changing layout or editor',
+    async () => {
+      await page.selectOption('#component-type', 'verticalProgress');
+      await page.click('#add-btn');
+      await waitCount(page, 21);
+      const before = await downloadLayout(page);
+      const editorColor = await page
+        .locator('.sidebar')
+        .evaluate((el) => getComputedStyle(el).backgroundColor);
+      const radar = () =>
+        page
+          .locator('.radar-canvas')
+          .first()
+          .evaluate((el) => el.toDataURL());
+      const classicRadar = await radar();
+      await page.selectOption('#theme-select', 'nasa-punk');
+      await page.waitForSelector('.stage[data-theme="nasa-punk"] .component-face');
+      assert.deepEqual(await downloadLayout(page), before);
+      assert.equal(
+        await page.locator('.sidebar').evaluate((el) => getComputedStyle(el).backgroundColor),
+        editorColor,
+      );
+      assert.notEqual(await radar(), classicRadar);
+      for (const type of [
+        'radar',
+        'info',
+        'ranks',
+        'rankImages',
+        'image',
+        'icon',
+        'text',
+        'verticalText',
+        'progress',
+        'verticalProgress',
+      ]) {
+        assert.ok(await page.locator(`[data-type="${type}"] .component-face`).count());
+      }
+      await page.selectOption('#theme-select', 'classic');
+      await page.waitForSelector('.stage[data-theme="classic"] .component-face');
+      assert.deepEqual(await downloadLayout(page), before);
+      assert.equal(await radar(), classicRadar);
+      await page.getByRole('button', { name: '删除组件', exact: true }).click();
+      await waitCount(page, 20);
+    },
+  );
+  await checkpoint(
     'scaled drag/resize, persisted layer order and splitter invariance',
     async () => {
       await page
@@ -466,6 +512,71 @@ try {
         await window.__VIDEO_EXPORT__.getManifest();
         window.__VIDEO_EXPORT__.dispose();
       });
+      await c.close();
+    },
+  );
+  await checkpoint(
+    'NASA work manifest, static hardware, deterministic export and high DPR',
+    async () => {
+      const c = await browser.newContext({
+        viewport: { width: 1920, height: 1080 },
+        deviceScaleFactor: 2,
+      });
+      const work = JSON.parse(await fs.readFile('dist/works/example/work.json', 'utf8'));
+      await c.route('**/works/example/work.json', (route) =>
+        route.fulfill({
+          contentType: 'application/json',
+          body: JSON.stringify({ ...work, theme: 'nasa-punk' }),
+        }),
+      );
+      await c.addInitScript(() => {
+        window.__VIDEO_EXPORT_REQUEST__ = {
+          fps: 60,
+          viewport: { width: 1920, height: 1080 },
+          output: { width: 3840, height: 2160 },
+          deviceScaleFactor: 2,
+          seed: 42,
+        };
+      });
+      const p = await c.newPage();
+      p.on('pageerror', (error) => errors.push(String(error)));
+      await p.goto(`${url}?work=example`);
+      await p.waitForFunction(() => !!window.__VIDEO_EXPORT__);
+      await p.evaluate(async () => {
+        await window.__VIDEO_EXPORT__.getManifest();
+        await window.__VIDEO_EXPORT__.prepare(window.__VIDEO_EXPORT_REQUEST__);
+      });
+      await p.waitForSelector('.stage[data-theme="nasa-punk"]');
+      assert.equal(
+        await p
+          .locator('.theme-background img')
+          .evaluate((el) => el.complete && el.naturalWidth === 1920),
+        true,
+      );
+      const renderTo = async () => {
+        await p.evaluate(async () => {
+          const api = window.__VIDEO_EXPORT__;
+          await api.reset();
+          for (let i = 0; i <= 720; i++)
+            await api.renderFrame({
+              index: i,
+              timeMs: (i * 1000) / 60,
+              deltaMs: i ? 1000 / 60 : 0,
+            });
+        });
+        return p.screenshot();
+      };
+      const first = await renderTo();
+      await p.waitForTimeout(150);
+      assert.equal(hash(await p.screenshot()), hash(first));
+      assert.equal(hash(await renderTo()), hash(first));
+      assert.deepEqual(
+        await p.locator('.radar-canvas').evaluate((el) => ({ width: el.width, height: el.height })),
+        { width: 1520, height: 1520 },
+      );
+      await p.screenshot({ path: 'test-results/nasa-punk-4k.png' });
+      await p.locator('.stage').screenshot({ path: 'test-results/nasa-punk.png', scale: 'css' });
+      await p.evaluate(() => window.__VIDEO_EXPORT__.dispose());
       await c.close();
     },
   );

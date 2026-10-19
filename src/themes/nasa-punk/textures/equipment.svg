@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <pattern id="caution" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="16" height="16" fill="#f5f2e9"/>
+      <path d="m-4 4 8-8m-8 24L20-4m-8 24 8-8" stroke="#252824" stroke-width="6"/>
+    </pattern>
+    <g id="bolt">
+      <circle r="6" fill="#dad6c9" stroke="#95998f"/>
+      <path d="m-3 3 6-6" stroke="#646a63" stroke-width="1.2"/>
+    </g>
+  </defs>
+  <rect width="1920" height="1080" fill="#ece5d6"/>
+  <rect x="20" y="20" width="1880" height="1040" rx="4" fill="none" stroke="#a5a697"/>
+  <path d="M52 84h1816M52 1052h1816" fill="none" stroke="#95998f"/>
+  <g transform="translate(80 39)">
+    <rect width="14" height="30" fill="#4C5A68"/>
+    <rect x="14" width="14" height="30" fill="#7A7F4E"/>
+    <rect x="28" width="14" height="30" fill="#D2A85E"/>
+    <rect x="42" width="14" height="30" fill="#A8432F"/>
+  </g>
+  <text x="154" y="59" fill="#252824" font-family="Helvetica, Arial, sans-serif" font-weight="700" font-size="22" letter-spacing="3">RADAR / FLIGHT ANALYSIS</text>
+  <g fill="#545b5a" font-family="Consolas, 'Liberation Mono', monospace" font-size="12" letter-spacing="1.5">
+    <text x="1050" y="57">INSTRUMENTATION DIVISION</text>
+    <text x="1530" y="57">REF. 084 / REV. 01</text>
+    <text x="1770" y="57">↑ UP</text>
+    <text x="1780" y="1004" font-size="10">STOW 84S</text>
+    <text x="80" y="1071" font-size="9">RADAR STANDARD · FLIGHT HARDWARE SERIES</text>
+    <text x="1580" y="1071" font-size="9">HANDLE WITH CARE / 01</text>
+  </g>
+  <rect x="1780" y="1018" width="66" height="12" fill="url(#caution)"/>
+  <g transform="translate(1650 938) rotate(-4)">
+    <rect x="0" y="0" width="184" height="30" fill="#f4edcc" stroke="#b7af96" stroke-width=".8"/>
+    <text x="12" y="21" fill="#5c6052" font-family="'Segoe Print', 'Bradley Hand', cursive" font-size="16" font-style="italic">check seals before flight</text>
+  </g>
+  <g fill="none" stroke="#545b5a" stroke-width=".7" opacity=".12">
+    <path d="m46 123 2 28m3-17 1 8m1808 765 15-3m-23 7 18-3M803 31l27-2m-13 5 7-1M936 1040l44-3"/>
+  </g>
+  <use href="#bolt" x="35" y="35"/><use href="#bolt" x="1885" y="35"/>
+  <use href="#bolt" x="35" y="1045"/><use href="#bolt" x="1885" y="1045"/>
+  <use href="#bolt" x="35" y="540"/><use href="#bolt" x="1885" y="540"/>
+</svg>

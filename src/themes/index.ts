@@ -1,6 +1,7 @@
 import { classic } from './classic/index.ts';
+import { nasaPunk } from './nasa-punk/index.ts';
 import type { Theme } from './types.ts';
-export const THEMES: Record<string, Theme> = { classic };
+export const THEMES: Record<string, Theme> = { classic, 'nasa-punk': nasaPunk };
 export function getTheme(id: string): Theme {
   if (!Object.hasOwn(THEMES, id)) throw new Error(`项目中未注册主题：${id}`);
   return THEMES[id];
